@@ -1,15 +1,17 @@
+/* Reset básico */
 * {
   padding: 0;
   margin: 0;
 }
 
+/* Estilo base */
 body {
   background-color: #f8f4e3;
   color: #333333;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* Header */
+/* --- Header --- */
 
 header {
   background-color: #7b1e3a;
@@ -35,16 +37,16 @@ header {
 }
 
 .nav-list li a:hover {
-  color: #d4af37;
+  color: #d4af37; /* Efeito visual com pseudo-classe */
 }
 
-/* Inicio */
+/* --- Seção Inicial --- */
 
 #inicio {
   background-image: url("../imgs/inicio-bg.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Efeito de 'fundo fixo' */
   color: #ffffff;
   text-align: center;
   padding: 120px;
@@ -61,7 +63,7 @@ header {
   margin-bottom: 60px;
 }
 
-/* Seções */
+/* --- Seções --- */
 
 section:not(#inicio, #vinhos) {
   margin: auto;
@@ -83,19 +85,21 @@ section img {
   border-radius: 10px;
 }
 
-/* Sobre nós */
+/* --- Sobre nós --- */
 
 #sobre p {
   margin-bottom: 5px;
 }
 
-/* Vinhos */
+/* --- Vinhos --- */
 
 #vinhos {
   background-color: #f1e8db;
   padding: 20px;
   margin-bottom: 20px;
 }
+
+/* --- Cards de vinhos --- */
 
 .card-container {
   display: flex;
@@ -114,7 +118,7 @@ section img {
   padding: 20px;
   width: 250px;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s; /* Efeito de transição suave */
 }
 
 .card img {
@@ -156,11 +160,11 @@ section img {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Efeito de elevação com transformação */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Contato */
+/* --- Contato --- */
 
 .form-contato {
   display: flex;
@@ -215,6 +219,7 @@ section img {
   justify-content: space-around;
 }
 
+/* Interação com pseudo-classes */
 .form-contato input:hover,
 .form-contato textarea:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.26);
@@ -237,7 +242,7 @@ section img {
   color: #a1747d;
 }
 
-/* Footer */
+/* --- Footer --- */
 
 footer {
   background-color: #7b1e3a;
